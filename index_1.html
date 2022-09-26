@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="functions.js" type="text/javascript"></script>
+    <title>Students</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        var students = [['Martin', 76], ['Thomas', 85], ['Klaus', 65], ['Maria', 93], ['David', 81]];
+        var Avgmarks = 0;
+        var avg = 0;
+        for (var i = 0; i < students.length; i++) {
+            Avgmarks = Avgmarks + students[i][1];
+        }
+        avg = (Avgmarks / students.length);
+
+
+        if (avg < 60)
+            alert("Average mark is " + avg + " and Grade is : F");
+        else if (avg < 70)
+            alert("Average mark is " + avg + " and Grade is : D");
+        else if (avg < 80)
+            alert("Average mark is " + avg + " and Grade is : C");
+        else if (avg < 90)
+            alert("Average mark is " + avg + " and Grade is : B");
+        else if (avg < 100)
+            alert("Average mark is " + avg + " and Grade is : A");  
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
